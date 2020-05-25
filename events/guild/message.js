@@ -27,7 +27,7 @@ module.exports = async (client, message) => {
 
         let wordUpdate = await Guild.findOneAndUpdate({ guildID: message.guild.id }, {$set: {nigga: word.nigga} }, { new: true });
 
-        console.log(`count updated to ${wordUpdate.nigga} for ${wordUpdate.guildName`);
+        console.log(`count updated to ${wordUpdate.nigga} for ${wordUpdate.guildName}`);
 
     }
 
