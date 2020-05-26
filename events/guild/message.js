@@ -39,7 +39,7 @@ module.exports = async (client, message) => {
 
     if(message.content.toLowerCase().toString() === "fuck") return message.channel.send("fuck indeed");
 
-    if((message.content.toLowerCase().includes('shut up'))  || (message.content.toLowerCase().includes('stfu')) || (message.content.toLowerCase().includes('shut the fuck up')) || (message.content.toLowerCase().toString() === "shut up") || (message.content.toLowerCase().toString() === "stfu") || (message.content.toLowerCase().toString() === "shut the fuck up")) return message.channel.send(`@${message.author.username} you shut the fuck up`);
+    if((message.content.toLowerCase().includes('shut up'))  || (message.content.toLowerCase().includes('stfu')) || (message.content.toLowerCase().includes('shut the fuck up')) || (message.content.toLowerCase().toString() === "shut up") || (message.content.toLowerCase().toString() === "stfu") || (message.content.toLowerCase().toString() === "shut the fuck up")) return message.channel.send(`${message.author.id} you shut the fuck up`);
 
     if (cmd.length === 0) return;
 
